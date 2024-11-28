@@ -1,0 +1,18 @@
+#include <stdio.h>
+typedef struct Book{
+    char* title;
+    char* author;
+    float price;
+} Book;
+int main (){
+    Book book[3]={
+        {"Kavgam", "Adolf Hitler", 11.50},
+        {"Nutuk", "M.K Ataturk", 59.50},
+        {"Xemse", "Nizami Gencevi", 29.50}
+    };
+    for(int i=0 ; i<3 ; i++)
+    {
+        printf("Book's name : %s , Books's author : %s , Book's price : $%.2f\n", book[i].title, book[i].author, book[i].price );
+    }
+    return 0;
+}
